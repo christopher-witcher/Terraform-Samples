@@ -16,6 +16,10 @@ pipeline {
             steps {
                 sh"""
                     echo "Hello World"
+                    chmod +777 SetEnvVars.sh
+                    ./SetEnvVars.sh
+                    chmod -777
+                    ch
                 """
             }
         }
