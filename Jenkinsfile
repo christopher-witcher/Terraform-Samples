@@ -17,6 +17,8 @@ pipeline {
                 sh"""
                     echo "Hello World"
                     
+                    terraform --version
+
                     chmod +777 Deploy.sh
                     echo "Setting environment variables for Terraform"
                     export ARM_SUBSCRIPTION_ID='ba158891-56de-4b98-99c6-b72bdcf8fc5a'
