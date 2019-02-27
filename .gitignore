@@ -9,4 +9,4 @@
 *.tfvars
 
 # .sh files
-SetEnvVars.sh
+#SetEnvVars.sh
