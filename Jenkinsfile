@@ -17,8 +17,10 @@ pipeline {
                 sh"""
                     echo "Hello World"
                     chmod +777 SetEnvVars.sh
+                    chmod +777 Deploy.sh
                     ./SetEnvVars.sh
-                    chmod -777
+                    
+                    ./Deploy.sh
                     ch
                 """
             }
