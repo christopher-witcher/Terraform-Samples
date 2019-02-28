@@ -9,6 +9,6 @@ az login --service-principal -u ${ARM_CLIENT_ID} -p ${ARM_CLIENT_SECRET} --tenan
 #terraform plan
 
 echo "Completing Deployment"
-terraform apply -var-file="network.tfvars"
+terraform apply -var-file="network.tfvars" -auto-approve
 
 echo "End of Deployment"
